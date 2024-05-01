@@ -2,6 +2,7 @@
 
 <p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/Brazilian_flag_icon_round.svg/512px-Brazilian_flag_icon_round.svg.png?20180509193906" /> Olá! Esse é o site para exibição dos meus projetos utilizando ECMAScript e funcionalidades interativas entre JS e HTML</p>
 <p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/512px-United-states_flag_icon_round.svg.png" /> Hello, this is the site for displaying my projects using ECMAScript and interactive features between JS and HTML.</strong></p>
+<img src="https://getflywheel.com/layout/wp-content/uploads/2021/07/The_Best_Java_Script_Libraries_1800x500-1-1800x500-1.jpeg" width="100%" padding-top="2000px" align="center">
 
 ## Funcionalidades:
 <p align="justify"> No site, você confere 5 exercícios propostos pelo <strong>Curso Em Vídeo de JavaScript e ECMAScript do Gustavo Guanabara</strong>, no qual eu dedico um agradecimento no meu site, suas aulas foram fundamentais para que eu pudesse aprender e executar as funcionalidades da forma correta!</p>
