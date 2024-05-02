@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://static.thenounproject.com/png/4522695-200.png" type="image/x-icon">
+    <title>Analisando Números</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        html{
+        height: 100vh;
+        }
+        body{
+            background: linear-gradient(180deg, rgba(41, 33, 155, 0.856) 1%, rgb(12, 79, 117) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            zoom: 110%;
+        }
+        .site{
+            animation: fade-in 3s;
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        .container{
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            background-color: rgba(127, 178, 201, 0.603);
+            margin: 0 auto;
+            width: 400px;
+            border-radius: 25px;
+            padding: 30px;
+            -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.22);
+            -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.22);
+            box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.22);
+        }
+        .submit{
+            display: flex;
+            padding: 5px;
+            justify-content: center;
+            color: azure;
+            background:rgba(50, 42, 155, 0.829);
+            border-radius: 5px;
+            width: 45%;
+            cursor: pointer;
+            font-size: 18px;
+            transition: 0.3s;
+            margin: 0 auto;
+            font-weight: 600;
+        }
+        .submit:hover{
+            transform: scale(1.05);
+            transition: 0.3s;          
+        }
+        .logomarca{
+            text-align: center;
+            margin-top: 15px;
+            color: rgba(240, 255, 255, 0.582);
+            font-style: italic;            
+        }
+
+        .buttons{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        #resultado{
+            display: none;
+            animation: fade-in 2s;
+            font-size: 18px;
+            text-align: justify;
+        }
+
+        #placeholder{
+            color: gray;
+        }
+
+        input{
+            border-radius: 5px;
+            border: 2px solid rgb(42, 97, 179);
+            padding-inline: 2px;
+            font-size: 16px;
+            width: 50%;
+            margin: 0 auto;
+            height: 20px;
+            background-color: rgb(234, 242, 252);
+            color: rgb(37, 36, 36);
+        }
+        select{
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+            background-color: rgb(234, 242, 252);
+            border-radius: 8px;
+            color: rgb(37, 36, 36);
+        }
+        option{
+            padding-block: 3px;
+        }
+        #detect{
+            padding: 10px;
+            text-align: justify;
+        }
+        @keyframes fade-in {
+            from{
+                transform: scale(0.99);
+                opacity: 0;
+            }
+            to{
+                transform: scale(1);
+                opacity: 100;
+            }
+        }
+        @media(max-width: 820px){
+            .container{
+                width: 350px;
+            }
+        }
+        @media(max-width: 520px){
+            .container{
+                width: 65%;
+            }
+            img{
+                width: 150px;
+            }
+            input{
+                width: 90%;
+            }
+            select{
+                width: 90%;
+            }
+            .title{
+                font-size: 1.5rem;
+            }
+            .submit{
+                padding: 3px;
+            }
+            .container h2{
+                font-size: 1.25rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="site">
+    <div class="title">
+        <header>ANALISANDO NÚMEROS</header>
+    </div>
+    <div class="container">
+        <h2 style="text-align: center;">Números entre 1 e 100</h2>
+        <input type="number" id="Numero" required placeholder="Digite o número aqui">
+        <p class="submit" onclick="adicionar()">Adicionar</p>
+        <select id="num" size="10">
+            <option id="placeholder">Os valores irão aparecer aqui</option>
+        </select>
+        <div class="buttons">
+        <p class="submit" onclick="gerar()">Finalizar</p>
+        <p class="submit" onclick="limpar()">Limpar</p>
+        </div>
+        <p id="resultado"></p>
+    </div>
+    <footer class="logomarca">©EduardoReche</footer>
+</section>
+<script>
+    let numarray = []
+    let res = document.getElementById('resultado')
+    let arrayselect = document.getElementById('num')
+
+    function adicionar(){
+        let valoradd = parseInt(document.getElementById('Numero').value)
+        
+        if (valoradd < 1 || valoradd > 100 || isNaN(valoradd) || numarray.includes(valoradd)){
+            window.alert('Valor inválido ou já adicionado!')
+            return
+        }else{
+            numarray.push(valoradd)
+            arrayselect.innerHTML = ''
+            for (let c = 0; c < numarray.length; c++){
+                arrayselect.innerHTML += `<option>Valor ${numarray[c]} adicionado.</option>`
+            }
+            res.innerHTML = ``
+            document.getElementById('Numero').value = ''
+            document.getElementById('Numero').focus()
+        }
+    }
+
+    function gerar(){
+        if (numarray.length == 0){
+            window.alert('Adicione valores antes de finalizar!')
+            return
+        }
+        else{
+            res.style.display = 'block'
+            res.innerHTML = ``
+            res.innerHTML += `Ao todo, temos <strong>${numarray.length}</strong> números cadastrados`
+            res.innerHTML += `<br><br>O menor número cadastrado foi <strong>${Math.min(...numarray)}</strong>`
+            res.innerHTML += `<br><br>O maior número cadastrado foi <strong>${Math.max(...numarray)}</strong>`
+
+            let soma = 0
+            for (let c = 0; c < numarray.length; c++){
+                soma += numarray[c]
+            }
+            res.innerHTML += `<br><br>A soma dos números resulta em <strong>${soma}</strong>`
+            res.innerHTML += `<br><br>A média dos números resulta em <strong>${(soma/numarray.length).toFixed(2)}</strong>`
+        }
+    }
+
+    function limpar(){
+        numarray = []
+        res.innerHTML = ``
+        arrayselect.innerHTML = ``
+    }
+</script>
+</body>
+</html>
