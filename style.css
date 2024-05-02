@@ -157,7 +157,7 @@ body{
 
 .footer{
     padding-inline: 120px;
-    padding-block: 80px;
+    margin-block: 90px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
