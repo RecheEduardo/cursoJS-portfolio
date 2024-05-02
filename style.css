@@ -237,6 +237,10 @@ body{
         padding: 20px;
     }
 
+    .footer{
+        padding-inline: 50px;
+    }
+
     .greetings{
         flex-direction: column-reverse;
     }
