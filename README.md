@@ -11,6 +11,7 @@
 ##
 
 <img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/js.site.png?raw=true" width="100%" padding-top="2000px" align="center">
+<img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/sitejs.png?raw=true" width="100%" padding-top="2000px" align="center">
 <img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/site.about.png?raw=true" width="100%" padding-top="2000px" align="center">
 
 ## Tecnologias Utilizadas:
