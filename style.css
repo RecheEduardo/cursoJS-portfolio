@@ -319,4 +319,7 @@ body{
     .site-title{
         font-size: 1.5rem;
     }
+    .top-site{
+        padding-inline: 25px;
+    }
 }
