@@ -17,7 +17,7 @@ body{
     background: linear-gradient(180deg, rgba(200,183,52,1) 0%, rgba(243,224,78,1) 12%);
     flex-direction: column;
     justify-content: space-between;  
-    height: 100vh;
+    height: 100svh;
     padding-inline: 60px;
     padding-block: 15px;
     animation: fade-in 2s;
