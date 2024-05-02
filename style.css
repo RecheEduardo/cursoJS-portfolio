@@ -7,7 +7,7 @@
 body{
     font-family: 'Montserrat';
     color: #161616;
-    background-color: #161616;
+    background-color: rgba(243,224,78,1);
 }
 
 .top-site{
@@ -263,6 +263,9 @@ body{
     .top-site{
         font-size: 2.5rem;
     }
+    .greetings{
+        text-align: center;
+    }
 }
 
 @media(max-width: 626px){
@@ -273,9 +276,13 @@ body{
         display: none;
     }
 
-    .apps{
-        background: #161616;
-        color: whitesmoke;
+    .site-title{
+        font-size: 1.75rem;
+    }
+
+    #myprojects{
+        border-radius: 15px;
+        width: 45%;
     }
 
     .projects-outer{
@@ -308,5 +315,8 @@ body{
 @media(max-width: 410px){
     .top-site{
         font-size: 1.25rem;
+    }
+    .site-title{
+        font-size: 1.5rem;
     }
 }
