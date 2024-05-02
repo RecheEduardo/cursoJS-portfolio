@@ -4,14 +4,18 @@
 <p align="center"><img width="15" height="15" loading="lazy" src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/88/United-states_flag_icon_round.svg/512px-United-states_flag_icon_round.svg.png" /> Hello, this is the site for displaying my projects using ECMAScript and interactive features between JS and HTML.</strong></p>
 <img src="https://getflywheel.com/layout/wp-content/uploads/2021/07/The_Best_Java_Script_Libraries_1800x500-1-1800x500-1.jpeg" width="100%" padding-top="2000px" align="center">
 
-## Funcionalidades:
+# Funcionalidades:
 <p align="justify"> No site, você confere 5 exercícios propostos pelo <strong>Curso Em Vídeo de JavaScript e ECMAScript do Gustavo Guanabara</strong>, no qual eu dedico um agradecimento no meu site, suas aulas foram fundamentais para que eu pudesse aprender e executar as funcionalidades da forma correta!</p>
 <p align="justify"> Dentro das funcionalidades, vale destacar o uso de <strong>funções</strong>, <strong>operadores aritiméticos</strong>, <strong>lógicos</strong> e <strong>condicionais</strong>. Além disso, foi aplicado o uso de <strong>loops</strong> e <strong>arrays</strong> para armazenar variáveis compostas por vetores e tarefas sequenciais. Conteitos esses importantes para o entendimento de <strong>estruturas em JS</strong>.</p>
 
-##
+## Página Inicial
 
 <img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/js.site.png?raw=true" width="100%" padding-top="2000px" align="center">
+
+## Projetos
 <img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/sitejs.png?raw=true" width="100%" padding-top="2000px" align="center">
+
+## Considerações
 <img src="https://github.com/RecheEduardo/cursoJS-portfolio/blob/main/imgs/site.about.png?raw=true" width="100%" padding-top="2000px" align="center">
 
 ## Tecnologias Utilizadas:
