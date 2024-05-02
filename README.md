@@ -16,7 +16,7 @@
 ## Tecnologias Utilizadas:
 
 <img width="40" height="40" loading="lazy" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/html5/html5-original.svg"/><strong>HTML5</strong><img width="40" height="40" loading="lazy" src="https://raw.githubusercontent.com/devicons/devicon/6910f0503efdd315c8f9b858234310c06e04d9c0/icons/css3/css3-original.svg" /><strong>CSS3</strong>
-<img width="40" height="40" loading="lazy" src="https://raw.githubusercontent.com/wingsuitist/ecmascript-logo/master/es-ecmascript-logo.png" /> <strong>ECMAScript 2023 (ES14)</strong>
+<img width="40" height="40" loading="lazy" src="https://raw.githubusercontent.com/wingsuitist/ecmascript-logo/master/es-ecmascript-logo.png" /> <strong>ECMAScript (ES6)</strong>
 
 ##
 
