@@ -20,7 +20,6 @@ body{
     height: 100svh;
     padding-inline: 60px;
     padding-block: 15px;
-    animation: fade-in 2s;
 }
 
 #top-title{
